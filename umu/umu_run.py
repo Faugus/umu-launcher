@@ -403,7 +403,6 @@ def build_command(
                 log.info("Re-entering container through bus '%s'", pfx_bus)
                 break
             log.info("Failed to find bus name %s (retry %s)", pfx_bus, trial + 1)
-            time.sleep(1)
 
     is_nsenter: bool = bool(nsenter)
     return (
